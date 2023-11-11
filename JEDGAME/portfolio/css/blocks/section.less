@@ -1,0 +1,162 @@
+// main: ../style.less
+
+.section{
+    display: flex;
+}
+
+
+
+.section_categ{
+    border-radius: 35px;
+    background-color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 0;
+    box-shadow: 0px 0px 5px 0px black;
+    
+}
+
+.section_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color .2s linear;
+    
+}
+
+#item_1{
+border-radius: 35px 35px 0px 0px;
+}
+
+#item_2{
+border-radius: 0px 0px 35px 35px;
+}
+
+.section_item:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+
+
+
+.section_columns{
+    text-align: center;
+    width: 200px;  
+}
+
+
+
+
+.section_short{
+    display: flex;
+    flex-flow: row wrap;
+    
+    padding: 10px;
+   
+}
+
+.section_block{
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px black;
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+}
+
+
+
+.section_name{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 60px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+.section_korzina{
+    position:  absolute;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 5px;
+    border-radius: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0);
+    transition: .2s linear;
+
+}
+
+.section_korzina:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.section_block:hover .section_korzina{
+visibility: visible;
+opacity: 1;
+}
+
+
+
+.section_block:hover > .section_name{
+    color: white;
+    background-color: black;
+}
+
+.section_block:hover > .section_price{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.section_block:hover > .section_image{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+
+
+.section_image{
+    display: block;
+    line-height: 0; 
+    transition: .2s linear;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.section_img{
+    position:relative;
+    padding: none;
+    z-index: -1000;
+}
+
+
+
+
+
+
+.section_price{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 3px 3px;
+    transition: .2s linear;
+}
+
